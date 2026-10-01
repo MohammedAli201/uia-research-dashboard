@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+﻿import React, {Component, useState} from 'react';
 import {
     ProSidebar,
     Menu,
@@ -67,6 +67,12 @@ export class SideMenu extends Component {
 
                                     </Link>
                                     Research Groups</MenuItem>
+
+                                <MenuItem icon={<BiCaretRightCircle/>}>
+                                    <Link to='/presentation'>
+
+                                    </Link>
+                                    Presentation</MenuItem>
                             </Menu>
                         </SidebarContent>
 

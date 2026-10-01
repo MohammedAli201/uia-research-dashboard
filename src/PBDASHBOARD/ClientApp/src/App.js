@@ -4,6 +4,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Institute} from './components/Institution/Institutes';
 import {Faculty} from './components/Institution/Faculty';
+import {PresentationVideo} from './components/DashboardView/PresentationVideo';
 import Login from "./components/UserAccount/Login";
 import {GroupVsPublications} from "./components/Researches/GroupVsPublications";
 import {SideMenu} from "./components/DashboardView/SideMenu";
@@ -74,6 +75,7 @@ export default class App extends Component {
                                     <Route path='/' exact component={Home }/>
                                     <Route path='/Institute' component={Institute}/>
                                     <Route path='/Facult' component={Faculty}/>
+                                    <Route path='/presentation' component={PresentationVideo}/>
                                     {/*
                                     <Route path='/pubVsTime' component={PubVsTime}/>
 */}
@@ -109,6 +111,7 @@ export default class App extends Component {
                                 <Route path='/' exact component={Home }/>
                                 <Route path='/Institute' component={Institute}/>
                                 <Route path='/Facult' component={Faculty}/>
+                                <Route path='/presentation' component={PresentationVideo}/>
                                 {/*
                                 <Route path='/pubVsTime' component={PubVsTime}/>
 */}
