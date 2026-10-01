@@ -1,0 +1,5 @@
+﻿.env
+bin
+obj
+clientApp
+node_modules

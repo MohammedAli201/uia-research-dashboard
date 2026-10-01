@@ -1,0 +1,40 @@
+﻿
+sudo-code for fetching associate members and students
+1. identify the htmlnode class
+2.  get list of associates check 
+
+bugs:
+
+1. add the institution to faculties in MapUnits methode.
+2. the ralationship between ContributorRole and contributor is many to many thus the role id should be in affiliation.
+5. be done with environment settings.
+6. finish fetching associate members and phd students.
+7. configuration update to start the or change the firstYear of publication, or setting parameters. resetSycyear() may be use configuration file to update this.
+8. simulate the fetching of years bu maybe for loop from 2917 upto 2012. One one year. 
+
+
+changing source code check later:
+1. GetMembersList()
+
+
+
+ferst save the firest year
+in UpdatePublishedYear(): firs gettig new data
+save to database, it doesnot exist.
+
+
+
+1. logConfim Path must have debug in.
+2. counting can also happen at the json parsing line
+3. http exception should be handled at the httpRequestTask() method, thus If(req.IsSuccessStatusCode) should be changed with it.
+
+18.04
+1. some request from 2017 are returning false in LogCofirm double check, this.
+how to handle internal server error 500???
+ https://api.cristin.no/v2/institutions/99000000
+ the polly polcy is commented because the taskCancelled exception is not crusshing the system.
+ 
+19.04
+https://api.cristin.no/v2/results?lang=en,nb&per_page=1000&published_since=2017&unit=201.18.1.0  registered 565 but should be 566.
+
+

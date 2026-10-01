@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:13.2-alpine
+    restart: always
+    expose:
+      - 5432
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB}"
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+      
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 8080:8080
+
+  site:
+    image: site
+    depends_on:
+      - postgres
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Production"
+      ConnectionStrings__DefaultConnection: "${ConnectionStrings__DefaultConnection}"
+      JwtConfig__Secret: "${JwtConfig__Secret}"
+      INITIAL_ADMIN_EMAIL: "${INITIAL_ADMIN_EMAIL}"
+      INITIAL_ADMIN_PASSWORD: "${INITIAL_ADMIN_PASSWORD}"

@@ -1,0 +1,46 @@
+[
+  {
+    "output": "demos/dashboard-demo.mp4",
+    "size": 17918800,
+    "sha256": "d04f809b27e8ccdd7c0766b526f26b93e73548679e0b6a1c0c648f6c8168c671",
+    "parts": [
+      {
+        "path": "archive/large-artifacts/dashboard-demo.mp4.part01",
+        "size": 8388608,
+        "sha256": "1815f651d50cda559cf054ae5883d93621dd1147f9e3cb6dd56fa29f7c696148"
+      },
+      {
+        "path": "archive/large-artifacts/dashboard-demo.mp4.part02",
+        "size": 8388608,
+        "sha256": "48defb25a3ae40829d26e0fbf0206d4170ce10dd31e9e8267ed3168ba9a2f8a1"
+      },
+      {
+        "path": "archive/large-artifacts/dashboard-demo.mp4.part03",
+        "size": 1141584,
+        "sha256": "b9c5706a2669e0792416dea0719626eac5502be6a5a29716f863d76daa8cc49d"
+      }
+    ]
+  },
+  {
+    "output": "docs/slides/research-dashboard-presentation.pptx",
+    "size": 22147891,
+    "sha256": "a3b9912556442b4258e17bb745022154ca8cbab510c1319a4e7b1925ebcbddd5",
+    "parts": [
+      {
+        "path": "archive/large-artifacts/research-dashboard-presentation.pptx.part01",
+        "size": 8388608,
+        "sha256": "676cf306e87138ca34151e84458e6740ff654e3e495c3f5a00819dcfd5533063"
+      },
+      {
+        "path": "archive/large-artifacts/research-dashboard-presentation.pptx.part02",
+        "size": 8388608,
+        "sha256": "8cd8347b581726023cf3ff57b32e0b1ceec004a8890d489f53b1830cfbb05436"
+      },
+      {
+        "path": "archive/large-artifacts/research-dashboard-presentation.pptx.part03",
+        "size": 5370675,
+        "sha256": "404958dd2d8e9210e472e5e3aa2b5f61d46e0786af799bea4a95997c653b579a"
+      }
+    ]
+  }
+]
